@@ -73,4 +73,10 @@
             /* Dark overlay for better text contrast */
             box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
         }
+
+        @media screen and (max-width: 768px) {
+            .animated-bg {
+                background-image: url('./imgs/bg-img-mobile.png');
+            }
+        }
     
