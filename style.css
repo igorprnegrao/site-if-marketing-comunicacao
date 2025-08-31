@@ -79,4 +79,10 @@
                 background-image: url('./imgs/bg-img-mobile.png');
             }
         }
+
+        @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi) {
+    .animated-bg {
+        /* Define uma imagem de alta qualidade para telas Retina */
+        background-image: url('./imgs/bg-img-mobile.png');
+        }}
     
