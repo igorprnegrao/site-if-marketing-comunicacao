@@ -74,7 +74,7 @@
             box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 37.5em) {
             .animated-bg {
                 background-image: url('./imgs/bg-img-mobile.png');
             }
@@ -84,7 +84,7 @@
             }
         }
 
-        @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi) {
+        @media screen and (max-width: 37.5em) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 37.5em) and (min-resolution: 192dpi) {
         .animated-bg {
         /* Define uma imagem de alta qualidade para telas Retina */
             background-image: url('./imgs/bg-img-mobile.png');
