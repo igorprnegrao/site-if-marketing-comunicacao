@@ -76,7 +76,7 @@
 
         @media screen and (max-width: 768px) {
             .animated-bg {
-                background-image: url('./imgs/bg-img-mobile.png');
+                background-image: url('https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2600&auto=format&fit=crop');
             }
 
             .logo-central {
@@ -87,7 +87,7 @@
         @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi) {
         .animated-bg {
         /* Define uma imagem de alta qualidade para telas Retina */
-            background-image: url('./imgs/bg-img-mobile.png');
+            background-image: url('https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2600&auto=format&fit=crop');
         }
         .logo-central {
                 width: 200px;
