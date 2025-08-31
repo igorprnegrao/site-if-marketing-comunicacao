@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Agência Digital - Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="text-primary-white">
+
+    <!-- Animated Background Layer -->
+    <div class="animated-bg"></div>
+
+    <!-- Navbar -->
+    <nav class="p-5 flex justify-between items-center fixed w-full z-10 top-0 bg-black bg-opacity-80 backdrop-blur-sm">
+        <div class="text-2xl font-bold text-primary-white"><img src="./imgs/if logo linkdin 300x800.png" width="300" height="200"></div>
+        
+        <div class="md:flex items-center space-x-6 hidden">
+            <a href="#inicio" class="text-primary-white hover:text-primary-pink transition-colors duration-300">Início</a>
+            <a href="#sobre" class="text-primary-white hover:text-primary-blue transition-colors duration-300">Sobre</a>
+            <a href="#servicos" class="text-primary-white hover:text-primary-pink transition-colors duration-300">Serviços</a>
+            <a href="#portfolio" class="text-primary-white hover:text-primary-blue transition-colors duration-300">Portfólio</a>
+            <a href="#feedback" class="text-primary-white hover:text-primary-pink transition-colors duration-300">Feedback</a>
+            <a href="#contato" class="px-4 py-2 bg-primary-pink text-black font-semibold rounded-full hover:bg-white transition-colors duration-300">Contato</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="menu-button" class="text-primary-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black transform -translate-y-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-8 z-20">
+        <a href="#inicio" class="text-3xl text-primary-white hover:text-primary-pink transition-colors duration-300" onclick="closeMenu()">Início</a>
+        <a href="#sobre" class="text-3xl text-primary-white hover:text-primary-blue transition-colors duration-300" onclick="closeMenu()">Sobre</a>
+        <a href="#servicos" class="text-3xl text-primary-white hover:text-primary-pink transition-colors duration-300" onclick="closeMenu()">Serviços</a>
+        <a href="#portfolio" class="text-3xl text-primary-white hover:text-primary-blue transition-colors duration-300" onclick="closeMenu()">Portfólio</a>
+        <a href="#feedback" class="text-3xl text-primary-white hover:text-primary-pink transition-colors duration-300" onclick="closeMenu()">Feedback</a>
+        <a href="#contato" class="text-3xl px-6 py-3 bg-primary-pink text-black font-semibold rounded-full hover:bg-white transition-colors duration-300" onclick="closeMenu()">Contato</a>
+        <button onclick="closeMenu()" class="absolute top-8 right-8 text-primary-white focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="h-screen flex flex-col justify-center items-center text-center p-5 pt-20 relative z-0">
+        <div><img src="./imgs/if logo linkdin 300x300.png" width="350" alt=""></div>
+        <div class="flex items-center justify-center space-x-4 mb-4 fade-in-up">
+            
+            <h1 class="text-5xl md:text-7xl font-bold">
+                Transformando <span class="text-primary-blue">Ideias</span> em <span class="text-primary-pink">Resultados</span>.
+            </h1>
+        </div>
+        <p class="text-lg md:text-2xl max-w-2xl mb-8 fade-in-up">
+            Sua agência de marketing digital especializada em impulsionar o seu negócio. Criamos estratégias inovadoras para conectar sua marca com o público certo.
+        </p>
+        <a href="#servicos" class="px-8 py-4 bg-primary-pink text-black font-semibold text-lg rounded-full hover:bg-white transition-colors duration-300 transform hover:scale-105 fade-in-up">
+            Descubra Nossos Serviços
+        </a>
+    </section>
+
+    <!-- Sobre a Empresa Section -->
+    <section id="sobre" class="py-20 px-5 text-center relative z-0 bg-black bg-opacity-70 backdrop-blur-md">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 text-primary-blue fade-in-up">Sobre a IF Marketing e Comunicação</h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-6 fade-in-up">
+                Fundada em 2021, a **IF Marketing e Comunicação** nasceu da paixão por transformar a presença digital de empresas de todos os portes. Com uma abordagem centrada no cliente e resultados tangíveis, nos destacamos por criar estratégias personalizadas que realmente fazem a diferença.
+            </p>
+            <p class="text-lg md:text-xl text-gray-300 mb-6 fade-in-up">
+                Nossa missão é ir além do convencional. Acreditamos que o marketing digital não é apenas sobre anúncios e métricas, mas sobre construir pontes e contar histórias que ressoam com o público. Combinamos criatividade, análise de dados e tecnologia de ponta para garantir que sua marca não apenas seja vista, mas seja lembrada.
+            </p>
+            <p class="text-lg md:text-xl text-gray-300 mb-6 fade-in-up">
+                Com uma equipe de especialistas apaixonados e dedicados, estamos prontos para ser o seu parceiro na jornada digital. Seja para impulsionar suas vendas, aumentar o reconhecimento da sua marca ou expandir seu alcance, a IF Marketing e Comunicação está aqui para ajudar você a alcançar o sucesso.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 px-5 text-center relative z-0 bg-black bg-opacity-70 backdrop-blur-md">
+        <h2 class="text-4xl md:text-5xl font-bold mb-12 fade-in-up">Nossos Serviços</h2>
+        
+        <!-- Online Services Section -->
+        <h3 class="text-3xl font-bold text-primary-blue mb-8 fade-in-up">Serviços Online</h3>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+            <!-- Service 1 -->
+            <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 hover:border-primary-pink transition-colors duration-300 scale-in">
+                <div class="w-16 h-16 mx-auto mb-4 bg-primary-pink rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Análise de Dados</h3>
+                <p class="text-gray-400">Transformamos dados em insights valiosos para otimizar suas campanhas e maximizar o ROI.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 hover:border-primary-blue transition-colors duration-300 scale-in">
+                <div class="w-16 h-16 mx-auto mb-4 bg-primary-blue rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a6 6 0 00-6 6v2a2 2 0 002 2h4a2 2 0 002-2V8a6 6 0 00-6-6zM4 16a2 2 0 002 2h8a2 2 0 002-2v-2H4v2z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Gestão de Mídias Sociais</h3>
+                <p class="text-gray-400">Criamos conteúdo envolvente e gerenciamos suas redes sociais para construir uma comunidade forte.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 hover:border-primary-pink transition-colors duration-300 scale-in">
+                <div class="w-16 h-16 mx-auto mb-4 bg-primary-pink rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8.5 7.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm-2 5.5a5 5 0 0110 0H6.5z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Desenvolvimento Web</h3>
+                <p class="text-gray-400">Construímos sites e landing pages otimizadas, focadas em conversão e experiência do usuário.</p>
+            </div>
+             <!-- Service 4 -->
+            <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 hover:border-primary-blue transition-colors duration-300 scale-in">
+                <div class="w-16 h-16 mx-auto mb-4 bg-primary-blue rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a6 6 0 00-6 6v2a2 2 0 002 2h4a2 2 0 002-2V8a6 6 0 00-6-6zM4 16a2 2 0 002 2h8a2 2 0 002-2v-2H4v2z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">SEO & Otimização</h3>
+                <p class="text-gray-400">Aumente sua visibilidade online e atraia tráfego orgânico com estratégias de SEO de ponta.</p>
+            </div>
+            <!-- Service 5 -->
+            <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 hover:border-primary-pink transition-colors duration-300 scale-in">
+                <div class="w-16 h-16 mx-auto mb-4 bg-primary-pink rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">E-mail Marketing</h3>
+                <p class="text-gray-400">Construa relacionamentos duradouros e converta leads em clientes com campanhas de e-mail eficazes.</p>
+            </div>
+            <!-- Service 6 -->
+            <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 hover:border-primary-blue transition-colors duration-300 scale-in">
+                <div class="w-16 h-16 mx-auto mb-4 bg-primary-blue rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M12 4h4a2 2 0 012 2v2a2 2 0 01-2 2h-4v2h4a2 2 0 012 2v2a2 2 0 01-2 2h-4v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2H2a2 2 0 01-2-2v-2a2 2 0 012-2h2V8H2a2 2 0 01-2-2V4a2 2 0 012-2h4a2 2 0 012 2v2h4V4z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Consultoria Estratégica</h3>
+                <p class="text-gray-400">Obtenha um plano de marketing digital personalizado e completo para alcançar seus objetivos de negócio.</p>
+            </div>
+        </div>
+
+        <!-- Offline Services Section -->
+        <h3 class="text-3xl font-bold text-primary-pink mb-8 fade-in-up">Serviços Offline</h3>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- New Service 1 -->
+            <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 hover:border-primary-pink transition-colors duration-300 scale-in">
+                <div class="w-16 h-16 mx-auto mb-4 bg-primary-pink rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm.5 12a.5.5 0 01-.5-.5v-4a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v4a.5.5 0 01-.5.5h-2z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Marketing de Rádio e TV</h3>
+                <p class="text-gray-400">Desenvolvimento de campanhas impactantes em mídias tradicionais para expandir o alcance da sua marca.</p>
+            </div>
+            <!-- New Service 2 -->
+            <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 hover:border-primary-blue transition-colors duration-300 scale-in">
+                <div class="w-16 h-16 mx-auto mb-4 bg-primary-blue rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M.5 10a.5.5 0 01.5-.5h18a.5.5 0 01.5.5v5a.5.5 0 01-.5.5H1a.5.5 0 01-.5-.5v-5zM12 4a2 2 0 10-4 0v1h4V4z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Materiais Impressos</h3>
+                <p class="text-gray-400">Criação de folhetos, cartões de visita e banners com design profissional para seu negócio.</p>
+            </div>
+            <!-- New Service 3 -->
+            <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 hover:border-primary-pink transition-colors duration-300 scale-in">
+                <div class="w-16 h-16 mx-auto mb-4 bg-primary-pink rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Eventos e Ativação</h3>
+                <p class="text-gray-400">Planejamento e execução de eventos para gerar experiências memoráveis e diretas com o público.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-5 text-center relative z-0 bg-black bg-opacity-70 backdrop-blur-md">
+        <h2 class="text-4xl md:text-5xl font-bold mb-12 fade-in-up">Nosso Portfólio</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Portfolio Item 1 -->
+            <div class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-primary-blue transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/600x400/5697BF/000000?text=Projeto+Web" alt="Projeto de Desenvolvimento Web" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-semibold text-primary-blue mb-2">Desenvolvimento de E-commerce</h3>
+                <p class="text-gray-400">Criação de uma loja virtual responsiva e otimizada para vendas.</p>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-primary-pink transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/600x400/B8A2B3/000000?text=Campanha+de+Social" alt="Projeto de Mídias Sociais" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-semibold text-primary-pink mb-2">Campanha de Lançamento Digital</h3>
+                <p class="text-gray-400">Estratégia completa de marketing para redes sociais para um novo produto.</p>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-primary-blue transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/600x400/5697BF/000000?text=Branding+e+Design" alt="Projeto de Branding" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-semibold text-primary-blue mb-2">Identidade Visual e Branding</h3>
+                <p class="text-gray-400">Criação de uma identidade de marca forte e consistente para uma startup.</p>
+            </div>
+            <!-- Portfolio Item 4 -->
+            <div class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-primary-pink transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/600x400/B8A2B3/000000?text=Análise+de+Dados" alt="Projeto de Análise de Dados" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-semibold text-primary-pink mb-2">Relatório de Desempenho SEO</h3>
+                <p class="text-gray-400">Análise de dados e otimização de SEO para aumentar o tráfego orgânico.</p>
+            </div>
+            <!-- Portfolio Item 5 -->
+            <div class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-primary-blue transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/600x400/5697BF/000000?text=Marketing+de+Conteúdo" alt="Projeto de Marketing de Conteúdo" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-semibold text-primary-blue mb-2">Blog Corporativo e Conteúdo</h3>
+                <p class="text-gray-400">Criação de um blog e planejamento de conteúdo para engajar o público.</p>
+            </div>
+            <!-- Portfolio Item 6 -->
+            <div class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-primary-pink transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/600x400/B8A2B3/000000?text=Campanha+de+e-mail" alt="Projeto de E-mail Marketing" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-semibold text-primary-pink mb-2">Automação de E-mail Marketing</h3>
+                <p class="text-gray-400">Criação de fluxos de e-mail automatizados para nutrir leads e converter clientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="py-20 px-5 text-center relative z-0 bg-black bg-opacity-70 backdrop-blur-md">
+        <h2 class="text-4xl md:text-5xl font-bold mb-12 fade-in-up">O Que Nossos Clientes Dizem</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Feedback Item 1 -->
+            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-primary-blue transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/80x80/5697BF/000000?text=A.C" alt="Ana C." class="rounded-full w-20 h-20 mx-auto mb-4 ring-2 ring-primary-blue">
+                <div class="flex justify-center text-yellow-400 mb-2">
+                    <span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span>
+                </div>
+                <p class="text-gray-400 italic mb-4">"A agência transformou completamente a nossa presença online. O tráfego do nosso site aumentou 200% em apenas três meses!"</p>
+                <p class="text-lg font-semibold text-primary-white">- Ana Carolina, Fundadora</p>
+            </div>
+            <!-- Feedback Item 2 -->
+            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-primary-pink transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/80x80/B8A2B3/000000?text=R.S" alt="Rodrigo S." class="rounded-full w-20 h-20 mx-auto mb-4 ring-2 ring-primary-pink">
+                <div class="flex justify-center text-yellow-400 mb-2">
+                    <span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span>
+                </div>
+                <p class="text-gray-400 italic mb-4">"O time é incrivelmente criativo. Eles capturaram a essência da nossa marca e a traduziram em campanhas que realmente conectam com o nosso público."</p>
+                <p class="text-lg font-semibold text-primary-white">- Rodrigo Santos, Diretor de Marketing</p>
+            </div>
+            <!-- Feedback Item 3 -->
+            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-primary-blue transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/80x80/5697BF/000000?text=M.L" alt="Mariana L." class="rounded-full w-20 h-20 mx-auto mb-4 ring-2 ring-primary-blue">
+                <div class="flex justify-center text-yellow-400 mb-2">
+                    <span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl opacity-25">&#9733;</span>
+                </div>
+                <p class="text-gray-400 italic mb-4">"Profissionais e eficientes. O desenvolvimento do nosso novo site foi impecável, entregue no prazo e superando todas as nossas expectativas. Muito obrigado!"</p>
+                <p class="text-lg font-semibold text-primary-white">- Mariana Lima, Gestora de E-commerce</p>
+            </div>
+            <!-- Feedback Item 4 -->
+            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-primary-pink transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/80x80/B8A2B3/000000?text=J.P" alt="Juliana P." class="rounded-full w-20 h-20 mx-auto mb-4 ring-2 ring-primary-pink">
+                <div class="flex justify-center text-yellow-400 mb-2">
+                    <span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span>
+                </div>
+                <p class="text-gray-400 italic mb-4">"O trabalho de SEO que eles fizeram foi crucial. Agora somos encontrados facilmente no Google, e isso gerou um crescimento notável em nossas vendas."</p>
+                <p class="text-lg font-semibold text-primary-white">- Juliana Pereira, Empreendedora</p>
+            </div>
+            <!-- Feedback Item 5 -->
+            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-primary-blue transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/80x80/5697BF/000000?text=F.G" alt="Fernando G." class="rounded-full w-20 h-20 mx-auto mb-4 ring-2 ring-primary-blue">
+                <div class="flex justify-center text-yellow-400 mb-2">
+                    <span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span>
+                </div>
+                <p class="text-gray-400 italic mb-4">"O suporte e a comunicação são de alto nível. Eles sempre estão disponíveis para tirar dúvidas e nos guiar pelas melhores estratégias de marketing."</p>
+                <p class="text-lg font-semibold text-primary-white">- Fernando Gomes, CEO</p>
+            </div>
+            <!-- Feedback Item 6 -->
+            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-primary-pink transition-colors duration-300 scale-in">
+                <img src="https://placehold.co/80x80/B8A2B3/000000?text=C.M" alt="Carla M." class="rounded-full w-20 h-20 mx-auto mb-4 ring-2 ring-primary-pink">
+                <div class="flex justify-center text-yellow-400 mb-2">
+                    <span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl">&#9733;</span><span class="text-xl opacity-25">&#9733;</span>
+                </div>
+                <p class="text-gray-400 italic mb-4">"O time tem uma visão estratégica incrível. Eles nos apresentaram soluções que nunca havíamos pensado e que fizeram toda a diferença para o nosso negócio."</p>
+                <p class="text-lg font-semibold text-primary-white">- Carla Mendes, Gerente de Vendas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section with Form -->
+    <section id="contato" class="py-20 px-5 text-center bg-gray-900 rounded-lg mx-auto max-w-xl border border-gray-700 fade-in-up relative z-0">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Pronto para Começar?</h2>
+        <p class="text-lg mx-auto mb-8 text-gray-400">
+            Preencha o formulário abaixo e entraremos em contato com você.
+        </p>
+        <form id="contactForm" class="flex flex-col space-y-4 text-left">
+            <div>
+                <label for="name" class="block text-gray-400 font-semibold mb-1">Seu Nome</label>
+                <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg bg-gray-800 text-primary-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-blue">
+            </div>
+            <div>
+                <label for="email" class="block text-gray-400 font-semibold mb-1">Seu E-mail</label>
+                <input type="email" id="email" name="email" required class="w-full p-3 rounded-lg bg-gray-800 text-primary-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-blue">
+            </div>
+            <div>
+                <label for="whatsapp" class="block text-gray-400 font-semibold mb-1">Seu WhatsApp</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required class="w-full p-3 rounded-lg bg-gray-800 text-primary-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-blue">
+            </div>
+            <div>
+                <label for="message" class="block text-gray-400 font-semibold mb-1">Sua Mensagem</label>
+                <div class="relative">
+                    <textarea id="message" name="message" rows="4" required class="w-full p-3 rounded-lg bg-gray-800 text-primary-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-blue"></textarea>
+                    <button type="button" id="generate-message-btn" class="absolute bottom-3 right-3 px-4 py-2 bg-primary-pink text-black text-sm font-semibold rounded-full hover:bg-white transition-colors duration-300 flex items-center">
+                        <span id="btn-text">✨ Gerar Mensagem Sugerida</span>
+                        <div id="loading-spinner" class="hidden spinner ml-2"></div>
+                    </button>
+                </div>
+            </div>
+            <button type="submit" class="px-8 py-4 bg-primary-blue text-black font-semibold text-lg rounded-full hover:bg-white transition-colors duration-300 transform hover:scale-105 self-center">
+                Enviar Mensagem
+            </button>
+            <div id="form-message" class="mt-4 text-center text-green-400 font-semibold hidden"></div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-gray-950 text-gray-400 py-12 px-5 fade-in-up relative z-0 bg-black bg-opacity-70 backdrop-blur-md">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Coluna de Contato -->
+            <div class="flex flex-col items-center md:items-start">
+                <h4 class="text-xl font-bold text-primary-white mb-4">Contato</h4>
+                <p class="flex items-center space-x-2 mb-2">
+                    <svg class="w-5 h-5 text-primary-pink" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM6 9a4 4 0 118 0 4 4 0 01-8 0z" clip-rule="evenodd"></path></svg>
+                    <span>Rua Exemplo, 123 - Cidade, Estado</span>
+                </p>
+                <p class="flex items-center space-x-2 mb-2">
+                    <svg class="w-5 h-5 text-primary-pink" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    <span>contato@suaagencia.com.br</span>
+                </p>
+                <p class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-primary-pink" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1H3a1 1 0 01-1-1V3zM9 3a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1H9a1 1 0 01-1-1V3z"></path><path fill-rule="evenodd" d="M16 11H4v6h12v-6zm-2-4H6v4h8V7z" clip-rule="evenodd"></path></svg>
+                    <span>(11) 98765-4321</span>
+                </p>
+            </div>
+            <!-- Coluna de Redes Sociais -->
+            <div class="flex flex-col items-center md:items-start">
+                <h4 class="text-xl font-bold text-primary-white mb-4">Siga-nos</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-primary-pink transition-colors duration-300">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.5 0.5a1.5 1.5 0 011.5 1.5v21a1.5 1.5 0 01-1.5 1.5h-21a1.5 1.5 0 01-1.5-1.5v-21a1.5 1.5 0 011.5-1.5h21zm-15.5 8h-3v-3h3v3zm-3 4.5v9h6v-9h-6zm13.5 1.5c-2.485 0-4.5 2.015-4.5 4.5s2.015 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.015-4.5-4.5-4.5zm-4.5 0h-3v-3h3v3z"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary-pink transition-colors duration-300">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16.25c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h5c.276 0 .5.224.5.5s-.224.5-.5.5h-5zm3.5-5.25c-1.381 0-2.5-1.119-2.5-2.5s1.119-2.5 2.5-2.5 2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5z"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary-pink transition-colors duration-300">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.5 0.5a1.5 1.5 0 011.5 1.5v21a1.5 1.5 0 01-1.5 1.5h-21a1.5 1.5 0 01-1.5-1.5v-21a1.5 1.5 0 011.5-1.5h21zm-10.5 5.5c-3.313 0-6 2.687-6 6s2.687 6 6 6 6-2.687 6-6-2.687-6-6-6zm0 10.5c-2.485 0-4.5-2.015-4.5-4.5s2.015-4.5 4.5-4.5 4.5 2.015 4.5 4.5-2.015 4.5-4.5 4.5zm7.5-12c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Coluna do Google Maps -->
+            <div class="flex flex-col items-center md:items-start">
+                <h4 class="text-xl font-bold text-primary-white mb-4">Localização</h4>
+                <div class="w-full h-48 bg-gray-800 rounded-lg overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.524451703649!2d-43.17641048493134!3d-22.90684678500213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f6c6f663f73%3A0x6b8d27d7c1e303f!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1625442589531!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-gray-600 text-sm">
+            <p>&copy; 2024 Sua Agência Digital. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript for the responsive menu and form submission -->
+    <script>
+        // Lógica para o menu responsivo
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('-translate-y-full');
+        });
+
+        function closeMenu() {
+            mobileMenu.classList.add('-translate-y-full');
+        }
+
+        // Lógica do formulário de contato
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('form-message');
+        const generateBtn = document.getElementById('generate-message-btn');
+        const loadingSpinner = document.getElementById('loading-spinner');
+        const btnText = document.getElementById('btn-text');
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            formMessage.textContent = 'Mensagem enviada com sucesso! Em breve entraremos em contato.';
+            formMessage.classList.remove('hidden');
+            contactForm.reset();
+        });
+
+        generateBtn.addEventListener('click', async () => {
+            const name = document.getElementById('name').value;
+            const messageTextarea = document.getElementById('message');
+
+            generateBtn.disabled = true;
+            loadingSpinner.classList.remove('hidden');
+            btnText.textContent = '';
+
+            const userQuery = `Eu sou o/a ${name || 'usuário'}. Preciso de um rascunho de mensagem breve e profissional para entrar em contato com uma agência de marketing digital sobre seus serviços.`;
+            const systemPrompt = "Você é um assistente de escrita de IA que ajuda a criar rascunhos de e-mail profissionais e concisos. Apenas forneça o texto do rascunho. Não inclua saudações ou assinaturas.";
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                },
+                model: "gemini-2.5-flash-preview-05-20"
+            };
+
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=`;
+
+            let retries = 0;
+            const maxRetries = 3;
+
+            async function fetchWithRetry(url, options) {
+                try {
+                    const response = await fetch(url, options);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return await response.json();
+                } catch (error) {
+                    if (retries < maxRetries) {
+                        retries++;
+                        const delay = Math.pow(2, retries) * 1000;
+                        console.log(`Falha na busca, tentando novamente em ${delay / 1000}s...`);
+                        return new Promise(resolve => setTimeout(() => resolve(fetchWithRetry(url, options)), delay));
+                    } else {
+                        throw error;
+                    }
+                }
+            }
+
+            try {
+                const response = await fetchWithRetry(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (response.candidates && response.candidates.length > 0 && response.candidates[0].content && response.candidates[0].content.parts && response.candidates[0].content.parts.length > 0) {
+                    messageTextarea.value = response.candidates[0].content.parts[0].text;
+                } else {
+                    messageTextarea.value = 'Desculpe, não foi possível gerar uma mensagem. Por favor, tente novamente.';
+                }
+            } catch (error) {
+                console.error('Erro ao chamar a API do Gemini:', error);
+                messageTextarea.value = 'Desculpe, ocorreu um erro ao gerar a mensagem. Por favor, tente novamente.';
+            } finally {
+                generateBtn.disabled = false;
+                loadingSpinner.classList.add('hidden');
+                btnText.textContent = '✨ Gerar Mensagem Sugerida';
+            }
+        });
+
+        // Lógica de animação com IntersectionObserver
+        document.addEventListener("DOMContentLoaded", () => {
+            const fadeInUpElements = document.querySelectorAll('.fade-in-up');
+            const scaleInElements = document.querySelectorAll('.scale-in');
+            
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            fadeInUpElements.forEach(el => observer.observe(el));
+            scaleInElements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+</html>
+

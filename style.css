@@ -1,0 +1,76 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #F2F2F2;
+            overflow-x: hidden;
+            background-color: #000000;
+        }
+        .text-primary-blue {
+            color: #5697BF;
+        }
+        .bg-primary-blue {
+            background-color: #5697BF;
+        }
+        .text-primary-pink {
+            color: #B8A2B3;
+        }
+        .bg-primary-pink {
+            background-color: #B8A2B3;
+        }
+        .text-primary-white {
+            color: #F2F2F2;
+        }
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border-left-color: #fff;
+            animation: spin 1s ease infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* Efeitos de Animação */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scale-in.is-visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Animated Background Image */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Dark overlay for better text contrast */
+            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+        }
+    
