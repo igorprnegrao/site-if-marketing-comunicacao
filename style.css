@@ -101,13 +101,7 @@
 
         /* Media Query para iPads e tablets */
         @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) and  (min-resolution: 192dpi){
-            .container-tablet {
-                padding-left: 4rem;
-                padding-right: 4rem;
-            }
-            #contactForm {
-                padding: 2.5rem;
-            }
+            
             .animated-bg {
                 /* Define uma imagem de alta qualidade para telas Retina */
                 background-image: url('./imgs/bg-img-mobile.png');
