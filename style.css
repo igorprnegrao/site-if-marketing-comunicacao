@@ -108,6 +108,12 @@
             #contactForm {
                 padding: 2.5rem;
             }
+            .animated-bg {
+                /* Define uma imagem de alta qualidade para telas Retina */
+                background-image: url('./imgs/bg-img-mobile.png');
+                background-size: contain; 
+                background-position: center top;
+            }
         }
 
     
